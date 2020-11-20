@@ -9,8 +9,8 @@ export class PlacesSearchService {
   constructor(private http: HttpClient) {}
   search(location: string, coords: any = {}, offset: string = '0') {
     let params: any = {
-      client_id: process.env.FOURSQUARE_CLIENT_ID,
-      client_secret: process.env.FOURSQUARE_CLIENT_SECRET,
+      client_id: 'KDO33MVWGII0HCIDZSGV4AWIWL1HY2IOV25RXN4E45ISOLGQ',
+      client_secret: 'U1G2T5TE42FVJ1RRKX3SK3YKFWNBE0M4HACJ1OQWQKHYLOLE',
       v: '20211119',
       limit: '10',
       offset,
