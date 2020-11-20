@@ -1,0 +1,13 @@
+<div class="places-container">
+  <div
+    *ngFor="let place of placesList"
+    class="place card card-body m-2 shadow p-3 mb-5 shadow-lg p-3 mb-5 bg-white rounded"
+    style="width: 18rem"
+  >
+    <h5 class="card-title">{{ place.venue.name }}</h5>
+    <div>{{ place.venue.categories[0].name }}</div>
+    <small class="text-muted">
+      {{ place.venue.location.formattedAddress.join(", ") }}
+    </small>
+  </div>
+</div>
